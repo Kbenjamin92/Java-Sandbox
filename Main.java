@@ -24,7 +24,16 @@ public class Main {
         }
         Scanner userInput = new Scanner(System.in);
         System.out.println("What items would you like to add? ");
-        String value = userInput.next().trim();
+        String value = userInput.nextLine().trim();
+        if (value == storeItems[0]) {
+            System.out.println("You are selecting a great computer for programming, enjoy!");
+        } else if (value == storeItems[1]) {
+            System.out.println("You have selected a Windows system, which is a good product!");
+        } else if (value == storeItems[2]) {
+            System.out.println("You have selected a computer system that is good for networking!");
+        } else {
+            System.out.println("You have selected a lower grade system.");
+        }
         System.out.println(value + " has been saved in your cart!");
     }
 
