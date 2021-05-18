@@ -28,7 +28,7 @@ public class Main {
         System.out.println(value + " has been saved in your cart!");
     }
 
-    static void addPrice() {
+    public void addPrice() {
 
     }
 
